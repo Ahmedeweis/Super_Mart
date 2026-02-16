@@ -12,16 +12,17 @@
     </div>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
-      <div v-for="product in products" :key="product.id"
-        class="bg-white p-3 md:p-4 rounded-xl border border-gray-100 hover:shadow-lg transition group">
+      <router-link :to="'/product/' + product.id" v-for="product in flashSaleProducts" :key="product.id"
+        class="bg-white p-3 md:p-4 rounded-xl border border-gray-100 hover:shadow-lg transition group block">
         <div class="relative mb-3">
-          <img :src="getImageUrl(product.id)" :alt="product.title"
+          <img :src="getImageUrl(product.imageIndex)" :alt="product.title"
             class="w-full aspect-square object-cover rounded-lg bg-gray-100" />
-          <div class="absolute top-2 left-2 bg-red-100 text-red-600 text-[10px] font-bold px-2 py-0.5 rounded">{{
+          <div class="absolute top-2 left-2 bg-red-100 text-red-600 text-[10px] font-bold px-2 py-0.5 rounded">-{{
             product.discount }}%</div>
         </div>
         <h3 class="text-xs md:text-sm font-medium text-gray-800 mb-1 line-clamp-2 group-hover:text-primary transition">
-          {{ product.title }} - {{ product.desc }}</h3>
+          {{ product.title }}</h3>
+        <p class="text-[10px] text-gray-500 mb-2 line-clamp-1">{{ product.description }}</p>
         <div class="flex flex-wrap items-baseline gap-2 mb-1">
           <span class="text-sm md:text-lg font-bold text-gray-900">${{ product.price.toFixed(2) }}</span>
           <span class="text-[10px] md:text-xs text-gray-400 line-through">${{ product.originalPrice.toFixed(2) }}</span>
@@ -35,15 +36,18 @@
           <span>|</span>
           <span>Sold {{ product.sold }}</span>
         </div>
-      </div>
+      </router-link>
     </div>
   </section>
 </template>
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { products } from '../../data/products'
 
-const timeInSeconds = ref(5 * 3600 + 17 * 60 + 56)
+const flashSaleProducts = computed(() => products.filter(p => p.isFlashSale))
+
+const timeInSeconds = ref(5 * 3600 + 17 * 60 + 47)
 let timer = null
 
 const formattedTime = computed(() => {
@@ -67,14 +71,7 @@ onUnmounted(() => {
   if (timer) clearInterval(timer)
 })
 
-const products = [
-  { id: 1, title: 'Sound Craft Electric Guitar', desc: 'Premium Tonewoods, Dynamic Pickups', price: 450.00, originalPrice: 650.00, discount: 30, rating: 4.9, sold: '500+' },
-  { id: 2, title: 'Sound Oasis Headphones', desc: 'Wireless Freedom, Noise-Canceling', price: 129.00, originalPrice: 199.00, discount: 35, rating: 4.8, sold: '1.2k' },
-  { id: 3, title: 'Urban Noir Eau De Parfum', desc: 'Long-Lasting, Sophisticated Blend', price: 85.00, originalPrice: 145.00, discount: 41, rating: 4.7, sold: '850+' },
-  { id: 4, title: 'Urban Fleece Essential Hoodies', desc: 'Ultra-Soft, Relaxed Fit', price: 45.00, originalPrice: 75.00, discount: 40, rating: 4.9, sold: '2k+' },
-  { id: 5, title: 'Ocean Haze Eau De Parfum', desc: 'Fresh Aquatic Scent, Cooling', price: 85.00, originalPrice: 145.00, discount: 41, rating: 4.8, sold: '900+' },
-  { id: 6, title: 'Urban Walk Active Sneakers', desc: 'Lightweight Design, Cushioned', price: 65.00, originalPrice: 110.00, discount: 40, rating: 4.6, sold: '450+' },
-]
+
 
 const getImageUrl = (i) => {
   return new URL(`../../assets/imgs/Flash_sale/${i}.png`, import.meta.url).href

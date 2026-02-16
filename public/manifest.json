@@ -1,24 +1,24 @@
 {
-  "name": "Press Play – لعبة الصحفيين",
-  "short_name": "PressPlay",
-  "description": "لعبة صحفية تفاعلية: بوت يسألك أسئلة في مواقف واقعية، تجاوب بسرعة، تكسب نقاط أو تخسر… وفي النهاية يظهر لك السكور.",
+  "name": "Super Mart",
+  "short_name": "Super Mart",
+  "description": "Shop the best deals and fresh products at Super Mart. Your one-stop shop for groceries, electronics, and daily essentials.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#FDC700",
+  "background_color": "#ffffff",
   "theme_color": "#FDC700",
   "orientation": "portrait",
-  "lang": "ar",
-  "dir": "rtl",
+  "lang": "en",
+  "dir": "ltr",
   "icons": [
     {
-      "src": "/icons/ico-192.png",
+      "src": "/logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/ico-512.png",
+      "src": "/logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

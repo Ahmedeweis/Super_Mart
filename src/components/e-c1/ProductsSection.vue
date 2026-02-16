@@ -2,10 +2,10 @@
   <section class="container mx-auto px-4 py-6 md:py-8">
     <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">Products you may like</h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-6">
-      <div v-for="product in recommendedProducts" :key="product.id"
-        class="bg-white rounded-xl overflow-hidden hover:shadow-xl transition group cursor-pointer border border-gray-100">
+      <router-link :to="`/product/${product.id}`" v-for="product in displayedProducts" :key="product.id"
+        class="bg-white rounded-xl overflow-hidden hover:shadow-xl transition group cursor-pointer border border-gray-100 block">
         <div class="relative">
-          <img :src="getImageUrl(product.id)" :alt="product.title" class="w-full aspect-square object-cover" />
+          <img :src="getImageUrl(product.imageIndex)" :alt="product.title" class="w-full aspect-square object-cover" />
           <div
             class="absolute top-2 right-2 p-1.5 bg-white rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition">
             <svg class="w-4 h-4 text-gray-400 hover:text-red-500" fill="currentColor" viewBox="0 0 20 20">
@@ -47,31 +47,31 @@
             Jakarta
           </div>
         </div>
-      </div>
+      </router-link>
     </div>
-    <div class="flex justify-center mt-6 md:mt-8">
-      <button
-        class="px-6 md:px-8 py-2 md:py-3 border border-gray-300 rounded-lg text-gray-600 font-medium hover:bg-gray-50 hover:text-primary hover:border-primary transition text-sm md:text-base">Load
+    <div v-if="visibleCount < recommendedProducts.length" class="flex justify-center mt-6 md:mt-8">
+      <button @click="loadMore"
+        class="px-6 cursor-pointer md:px-8 py-2 md:py-3 border border-gray-300 rounded-lg text-gray-600 font-medium hover:bg-gray-50 hover:text-primary hover:border-primary transition text-sm md:text-base">Load
         More</button>
     </div>
   </section>
 </template>
 
 <script setup>
-const recommendedProducts = [
-  { id: 1, title: 'Summer Breeze Ultra-Soft Tee', price: 25.00, originalPrice: 35.00, discount: 28, rating: 4.8, sold: '1.5k' },
-  { id: 2, title: 'Sunset Glow Eau De Parfum', price: 85.00, originalPrice: 120.00, discount: 29, rating: 4.9, sold: '800+' },
-  { id: 3, title: 'Creative Flow Artist Essentials', price: 45.00, originalPrice: 60.00, discount: 25, rating: 4.7, sold: '2.1k' },
-  { id: 4, title: 'Pure Sound Electric Series Guitar', price: 550.00, originalPrice: 750.00, discount: 26, rating: 5.0, sold: '300+' },
-  { id: 5, title: 'Beauty Essentials Makeup Collection', price: 65.00, originalPrice: 90.00, discount: 27, rating: 4.8, sold: '1.1k' },
-  { id: 6, title: 'Tech Key Pro Series Mechanical Keyboard', price: 120.00, originalPrice: 160.00, discount: 25, rating: 4.9, sold: '650+' },
-  { id: 7, title: 'Precision Click Gaming Mouse', price: 45.00, originalPrice: 70.00, discount: 35, rating: 4.7, sold: '950+' },
-  { id: 8, title: "Eve's Eala Gala Luxury Evening Wear", price: 220.00, originalPrice: 350.00, discount: 37, rating: 4.9, sold: '150+' },
-  { id: 9, title: 'Smooth Shave Luxury Shaving Cream', price: 18.00, originalPrice: 25.00, discount: 28, rating: 4.8, sold: '3k+' },
-  { id: 10, title: 'Active Gear Performance Tee', price: 28.00, originalPrice: 40.00, discount: 30, rating: 4.7, sold: '1.2k' },
-  { id: 11, title: 'Urban Ease Modern Sherwal', price: 55.00, originalPrice: 85.00, discount: 35, rating: 4.6, sold: '500+' },
-  { id: 12, title: 'Winter Bliss Cozy Fleece Hoodie', price: 48.00, originalPrice: 75.00, discount: 36, rating: 4.9, sold: '2.5k' },
-]
+import { ref, computed } from 'vue'
+import { products as recommendedProducts } from '../../data/products'
+
+
+
+const visibleCount = ref(10)
+
+const displayedProducts = computed(() => {
+  return recommendedProducts.slice(0, visibleCount.value)
+})
+
+const loadMore = () => {
+  visibleCount.value = recommendedProducts.length
+}
 
 const getImageUrl = (i) => {
   return new URL(`../../assets/imgs/may_like/${i}.png`, import.meta.url).href
