@@ -104,19 +104,30 @@
                         </div>
 
                         <!-- Discount Code -->
-                        <div class="flex gap-2 mb-6">
-                            <input type="text" placeholder="Discount code"
-                                class="w-full px-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400" />
-                            <button
-                                class="px-4 py-2 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition text-sm cursor-pointer">Apply</button>
+                        <div class="mb-6 border-b border-gray-100 pb-6">
+                            <div class="flex gap-2">
+                                <input type="text" placeholder="Discount code" v-model="discountCodeInput"
+                                    class="w-full px-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400" />
+                                <button @click="handleApplyDiscount"
+                                    class="px-4 py-2 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition text-sm cursor-pointer">Apply</button>
+                            </div>
+                            <p v-if="cartStore.discountCode" class="text-green-600 text-sm mt-2">
+                                Code <strong>{{ cartStore.discountCode }}</strong> applied!
+                            </p>
                         </div>
 
                         <div class="border-t border-gray-100 pt-4 mb-6">
                             <div class="flex justify-between items-center">
                                 <span class="font-bold text-gray-900">Total</span>
-                                <span class="text-xl font-bold text-gray-900">${{ cartStore.cartTotal.toFixed(2)
-                                }}</span>
+                                <span class="text-xl font-bold text-gray-900">${{ cartStore.finalTotal.toFixed(2)
+                                    }}</span>
                             </div>
+                        </div>
+
+                        <div class="flex justify-between text-sm text-gray-600 mb-4"
+                            v-if="cartStore.discountAmount > 0">
+                            <span class="text-green-600">Discount</span>
+                            <span class="font-bold text-green-600">-${{ cartStore.discountAmount.toFixed(2) }}</span>
                         </div>
 
                         <router-link to="/checkout"
@@ -181,6 +192,14 @@ import { ref, computed } from 'vue'
 import { useCartStore } from '../../store/cart'
 
 const cartStore = useCartStore()
+
+const discountCodeInput = ref('')
+
+const handleApplyDiscount = () => {
+    if (discountCodeInput.value.trim()) {
+        cartStore.applyDiscount(discountCodeInput.value)
+    }
+}
 
 const getImageUrl = (i) => {
     return new URL(`../../assets/imgs/may_like/${i}.png`, import.meta.url).href
