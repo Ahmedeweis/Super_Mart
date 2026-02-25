@@ -111,6 +111,6 @@ const close = () => {
 const getImageUrl = (product) => {
     const folder = product.imageFolder || 'may_like'
     const index = product.imageIndex || product.id
-    return new URL(`../../assets/imgs/${folder}/${index}.png`, import.meta.url).href
+    return new URL(`../../assets/imgs/${folder}/${index}.webp`, import.meta.url).href
 }
 </script>

@@ -195,6 +195,6 @@ watch(() => route.params.id, () => {
 
 const getImageUrl = (i) => {
     const folder = product.value?.imageFolder || 'may_like'
-    return new URL(`../assets/imgs/${folder}/${i}.png`, import.meta.url).href
+    return new URL(`../assets/imgs/${folder}/${i}.webp`, import.meta.url).href
 }
 </script>

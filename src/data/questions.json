@@ -115,13 +115,13 @@
                 "impact": -5,
                 "comments": [
                     {
-                        "avatar": "p1.png",
+                        "avatar": "p1.webp",
                         "name": "مريم",
                         "username": "@m_m",
                         "text": "منتهى الجرأة... لكن هل تحققتم؟"
                     },
                     {
-                        "avatar": "p2.png",
+                        "avatar": "p2.webp",
                         "name": "تامر",
                         "username": "@t_t",
                         "text": "أخبار كبيرة لو صحيحة — ننتظر الأدلة."
@@ -135,7 +135,7 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p3.png",
+                        "avatar": "p3.webp",
                         "name": "سارة",
                         "username": "@s_s",
                         "text": "تحقيق عقلاني — هذا ما ننتظره."
@@ -156,13 +156,13 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p4.png",
+                        "avatar": "p4.webp",
                         "name": "علي",
                         "username": "@ali_r",
                         "text": "أحسنت التوضيح — هذا يُظهر احترافية."
                     },
                     {
-                        "avatar": "p5.png",
+                        "avatar": "p5.webp",
                         "name": "نور",
                         "username": "@n_n",
                         "text": "نحتاج دائمًا الشفافية."
@@ -176,7 +176,7 @@
                 "impact": -5,
                 "comments": [
                     {
-                        "avatar": "p6.png",
+                        "avatar": "p6.webp",
                         "name": "هدى",
                         "username": "@h_h",
                         "text": "ترك الموضوع سيقلل من مصداقيتك."
@@ -197,13 +197,13 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p3.png",
+                        "avatar": "p3.webp",
                         "name": "سارة",
                         "username": "@s_s",
                         "text": "ممتاز، هذا ما يجب أن تفعله الصحافة."
                     },
                     {
-                        "avatar": "p7.png",
+                        "avatar": "p7.webp",
                         "name": "ياسمين",
                         "username": "@y_y",
                         "text": "عمل احترافي 👏"
@@ -217,7 +217,7 @@
                 "impact": 0,
                 "comments": [
                     {
-                        "avatar": "p8.png",
+                        "avatar": "p8.webp",
                         "name": "خالد",
                         "username": "@k_k",
                         "text": "التحقق جيد لكن لا تبطئ كثيرًا."
@@ -238,7 +238,7 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p9.png",
+                        "avatar": "p9.webp",
                         "name": "جود",
                         "username": "@j_j",
                         "text": "التحليل أوضح الصورة — شكرًا لكم."
@@ -252,7 +252,7 @@
                 "impact": -5,
                 "comments": [
                     {
-                        "avatar": "p10.png",
+                        "avatar": "p10.webp",
                         "name": "ليلى",
                         "username": "@l_l",
                         "text": "حماية المصادر مهمة لكن ليست دومًا."
@@ -294,7 +294,7 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p11.png",
+                        "avatar": "p11.webp",
                         "name": "هاجر",
                         "username": "@h_j",
                         "text": "الاعتذار خطوة ناضجة."
@@ -308,7 +308,7 @@
                 "impact": -5,
                 "comments": [
                     {
-                        "avatar": "p12.png",
+                        "avatar": "p12.webp",
                         "name": "رامي",
                         "username": "@r_r",
                         "text": "الإصرار بلا دليل قد يكلفك سمعتك."
@@ -357,13 +357,13 @@
                 "impact": -5,
                 "comments": [
                     {
-                        "avatar": "p13.png",
+                        "avatar": "p13.webp",
                         "name": "نورا",
                         "username": "@nora",
                         "text": "قصة ملهمة لكن أين الأدلة؟"
                     },
                     {
-                        "avatar": "p14.png",
+                        "avatar": "p14.webp",
                         "name": "منى",
                         "username": "@m_m",
                         "text": "الخبر يبعث الأمل، شكرًا!"
@@ -377,7 +377,7 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p15.png",
+                        "avatar": "p15.webp",
                         "name": "ليلى",
                         "username": "@leila",
                         "text": "التحقق مهم جدًا — أحسنت."
@@ -398,7 +398,7 @@
                 "impact": 5,
                 "comments": [
                     {
-                        "avatar": "p14.png",
+                        "avatar": "p14.webp",
                         "name": "منى",
                         "username": "@m_m",
                         "text": "هذه الحكاية ألهمتني."
@@ -412,7 +412,7 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p15.png",
+                        "avatar": "p15.webp",
                         "name": "ليلى",
                         "username": "@leila",
                         "text": "المتابعة أولوية — جيد."
@@ -433,7 +433,7 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p16.png",
+                        "avatar": "p16.webp",
                         "name": "سلمى",
                         "username": "@salma",
                         "text": "توازن ممتاز بين الحس الإنساني والمهنية."
@@ -447,7 +447,7 @@
                 "impact": -5,
                 "comments": [
                     {
-                        "avatar": "p17.png",
+                        "avatar": "p17.webp",
                         "name": "خديجة",
                         "username": "@kh",
                         "text": "الخصوصية مهمة لكن الجمهور قد يشعر بالإحباط."
@@ -468,7 +468,7 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p18.png",
+                        "avatar": "p18.webp",
                         "name": "يوسف",
                         "username": "@yousef",
                         "text": "فيديو سيجعل القصة تلامس قلوب الناس."
@@ -482,7 +482,7 @@
                 "impact": 5,
                 "comments": [
                     {
-                        "avatar": "p19.png",
+                        "avatar": "p19.webp",
                         "name": "عهد",
                         "username": "@ahd",
                         "text": "خيار عملي يدعم القضية."
@@ -503,7 +503,7 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p20.png",
+                        "avatar": "p20.webp",
                         "name": "مروان",
                         "username": "@m_mr",
                         "text": "أرقام قوية — تقرير مفيد."
@@ -517,7 +517,7 @@
                 "impact": 5,
                 "comments": [
                     {
-                        "avatar": "p21.png",
+                        "avatar": "p21.webp",
                         "name": "سعاد",
                         "username": "@s_su",
                         "text": "قصة تشجع المشاركة المجتمعية."
@@ -538,13 +538,13 @@
                 "impact": -5,
                 "comments": [
                     {
-                        "avatar": "p22.png",
+                        "avatar": "p22.webp",
                         "name": "جلال",
                         "username": "@jal",
                         "text": "نشر سريع يثير الذعر."
                     },
                     {
-                        "avatar": "p23.png",
+                        "avatar": "p23.webp",
                         "name": "دينا",
                         "username": "@dina",
                         "text": "التحقق قبل النشر أسلم."
@@ -558,7 +558,7 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p24.png",
+                        "avatar": "p24.webp",
                         "name": "نبيل",
                         "username": "@nbl",
                         "text": "التحقق ينقذ مصداقية الوسيلة."
@@ -579,7 +579,7 @@
                 "impact": 5,
                 "comments": [
                     {
-                        "avatar": "p25.png",
+                        "avatar": "p25.webp",
                         "name": "رنا",
                         "username": "@r_r",
                         "text": "التوضيح ساعد في تهدئة البعض."
@@ -593,7 +593,7 @@
                 "impact": -5,
                 "comments": [
                     {
-                        "avatar": "p26.png",
+                        "avatar": "p26.webp",
                         "name": "فراس",
                         "username": "@f_f",
                         "text": "التجاهل أحيانًا يقوّض الثقة."
@@ -614,7 +614,7 @@
                 "impact": 10,
                 "comments": [
                     {
-                        "avatar": "p27.png",
+                        "avatar": "p27.webp",
                         "name": "علياء",
                         "username": "@a_a",
                         "text": "التوازن في الطرح مهم — أحسنت."
@@ -628,7 +628,7 @@
                 "impact": 5,
                 "comments": [
                     {
-                        "avatar": "p28.png",
+                        "avatar": "p28.webp",
                         "name": "هادي",
                         "username": "@h_h",
                         "text": "التحذير مفيد لكنه يترك أسئلة."

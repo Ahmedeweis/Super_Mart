@@ -3,7 +3,7 @@
     <div
       class="relative rounded-2xl overflow-hidden h-[200px] sm:h-[300px] md:h-[400px] bg-gradient-to-r from-teal-800 to-teal-600 flex items-center">
       <!-- Background Image Placeholder -->
-      <img src="../../assets/imgs/banner.png" alt="End Year Sale" width="1920" height="400" fetchpriority="high"
+      <img src="../../assets/imgs/banner.webp" alt="End Year Sale" width="1920" height="400" fetchpriority="high"
         loading="eager" decoding="sync"
         class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-overlay" />
 

@@ -88,7 +88,7 @@
                             class="absolute inset-0 bg-gradient-to-tr from-purple-500 to-blue-500 rounded-full mix-blend-overlay filter blur-xl opacity-70 animate-pulse">
                         </div>
                         <!-- SVG Abstract Shape -->
-                        <img src="../assets/imgs/login.png" alt="Login">
+                        <img src="../assets/imgs/login.webp" alt="Login">
                     </div>
                 </div>
 

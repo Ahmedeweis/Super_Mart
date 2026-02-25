@@ -75,6 +75,6 @@ const loadMore = () => {
 }
 
 const getImageUrl = (i) => {
-  return new URL(`../../assets/imgs/may_like/${i}.png`, import.meta.url).href
+  return new URL(`../../assets/imgs/may_like/${i}.webp`, import.meta.url).href
 }
 </script>

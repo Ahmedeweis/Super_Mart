@@ -78,6 +78,6 @@ const getImageUrl = (product) => {
     const folder = product.imageFolder || 'may_like'
     // Use visible index or id if index missing
     const index = product.imageIndex || product.id
-    return new URL(`../assets/imgs/${folder}/${index}.png`, import.meta.url).href
+    return new URL(`../assets/imgs/${folder}/${index}.webp`, import.meta.url).href
 }
 </script>

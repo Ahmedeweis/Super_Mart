@@ -79,6 +79,6 @@ onUnmounted(() => {
 
 
 const getImageUrl = (i) => {
-  return new URL(`../../assets/imgs/Flash_sale/${i}.png`, import.meta.url).href
+  return new URL(`../../assets/imgs/Flash_sale/${i}.webp`, import.meta.url).href
 }
 </script>
