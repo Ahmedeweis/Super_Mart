@@ -12,7 +12,7 @@
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
             <span v-if="cartStore.cartItemCount > 0"
-              class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">{{
+              class="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">{{
                 cartStore.cartItemCount }}</span>
           </router-link>
         </div>
@@ -41,7 +41,7 @@
         </div>
         <input type="text" placeholder="Search in  Super Mart" v-model="searchQuery" @keyup.enter="handleSearch"
           class="w-full px-4 py-2.5 border border-gray-300 rounded-lg md:rounded-none md:rounded-r-none focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" />
-        <button @click="handleSearch"
+        <button @click="handleSearch" aria-label="Search products"
           class="bg-[#5A4098] text-white px-5 py-2.5 rounded-r-lg hover:bg-purple-700 transition hidden md:block">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -58,7 +58,7 @@
               d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
           </svg>
           <span v-if="cartStore.cartItemCount > 0"
-            class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">{{
+            class="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">{{
               cartStore.cartItemCount }}</span>
         </router-link>
         <router-link to="/login"

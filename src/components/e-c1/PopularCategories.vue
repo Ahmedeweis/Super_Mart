@@ -5,7 +5,7 @@
       <div v-for="category in categories" :key="category.name"
         class="min-w-[120px] md:min-w-[140px] h-[120px] md:h-[140px] border border-gray-100 rounded-xl flex flex-col items-center justify-center gap-3 hover:border-primary hover:shadow-lg transition cursor-pointer bg-white flex-shrink-0 group">
         <div class="w-16 h-16 flex items-center justify-center overflow-hidden">
-          <img :src="category.image" :alt="category.name"
+          <img :src="category.image" :alt="category.name + ' category'"
             class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
         </div>
         <span class="text-xs md:text-sm font-medium text-gray-700 text-center px-2">{{ category.name }}</span>

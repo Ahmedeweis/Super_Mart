@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
         <div>
           <h3 class="text-xl font-bold text-gray-900 mb-4"> Super Mart</h3>
-          <p class="text-gray-500 text-sm mb-4">Easy & reliable online buying and selling site</p>
+          <p class="text-gray-600 text-sm mb-4">Easy & reliable online buying and selling site</p>
           <div class="flex gap-4">
             <a href="#"
               class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-black   transition group">
@@ -32,7 +32,7 @@
 
         <div>
           <h4 class="font-bold text-gray-900 mb-4">Company</h4>
-          <ul class="space-y-2 text-sm text-gray-500">
+          <ul class="space-y-2 text-sm text-gray-600">
             <li><a href="#" class="hover:text-primary">About Us</a></li>
             <li><a href="#" class="hover:text-primary">Career</a></li>
             <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
@@ -42,7 +42,7 @@
 
         <div>
           <h4 class="font-bold text-gray-900 mb-4">Buyer</h4>
-          <ul class="space-y-2 text-sm text-gray-500">
+          <ul class="space-y-2 text-sm text-gray-600">
             <li><a href="#" class="hover:text-primary">Help</a></li>
             <li><a href="#" class="hover:text-primary">Payment Method</a></li>
             <li><a href="#" class="hover:text-primary">Track Buyer Orders</a></li>
@@ -54,7 +54,7 @@
 
         <div>
           <h4 class="font-bold text-gray-900 mb-4">Seller</h4>
-          <ul class="space-y-2 text-sm text-gray-500">
+          <ul class="space-y-2 text-sm text-gray-600">
             <li><a href="#" class="hover:text-primary">How to Sell</a></li>
             <li><a href="#" class="hover:text-primary">Sales Profit</a></li>
             <li><a href="#" class="hover:text-primary">Brand Index</a></li>
@@ -64,7 +64,7 @@
       </div>
 
       <div
-        class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+        class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
         <div>&copy; 2023 Super Mart. All Rights Reserved.</div>
         <div class="flex gap-4">
           <a href="#">Terms & Conditions</a>

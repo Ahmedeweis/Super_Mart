@@ -5,39 +5,34 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <div class="h-full rounded-xl overflow-hidden group cursor-pointer relative">
-        <img src="../../assets/imgs/Today/00.png" class="w-full h-full object-cover group-hover:scale-110 transition" />
+        <img src="../../assets/imgs/Today/00.png" alt="Today's top promotion banner"
+          class="w-full h-full object-cover group-hover:scale-110 transition" />
       </div>
-
 
       <div class="flex flex-col gap-4">
         <div
           class="bg-gray-800 rounded-xl flex flex-col justify-between h-40 md:h-48 relative overflow-hidden group cursor-pointer text-white">
-
-          <img src="../../assets/imgs/Today/1.png"
+          <img src="../../assets/imgs/Today/1.png" alt="Featured electronics promotion"
             class=" w-full h-full object-cover opacity-50 group-hover:opacity-70 transition" />
         </div>
 
         <div
           class="bg-pink-100 rounded-xl  flex flex-col justify-between h-40 md:h-48 relative overflow-hidden group cursor-pointer">
-
-          <img src="../../assets/imgs/Today/2.png"
+          <img src="../../assets/imgs/Today/2.png" alt="Fashion promotion"
             class=" w-full h-full object-cover group-hover:scale-110 transition" />
         </div>
       </div>
       <div class="flex flex-col gap-4">
         <div
           class="bg-pink-100 rounded-xl  flex flex-col justify-between h-40 md:h-48 relative overflow-hidden group cursor-pointer">
-
-          <img src="../../assets/imgs/Today/3.png"
+          <img src="../../assets/imgs/Today/3.png" alt="Beauty and health promotion"
             class=" w-full h-full object-cover group-hover:scale-110 transition" />
         </div>
         <div
           class="bg-amber-900 rounded-xl  flex flex-col justify-between h-40 md:h-48 relative overflow-hidden group cursor-pointer text-white">
-
-          <img src="../../assets/imgs/Today/4.png"
+          <img src="../../assets/imgs/Today/4.png" alt="Home and furniture promotion"
             class=" w-full h-full object-cover group-hover:scale-110 transition" />
         </div>
-
       </div>
 
 

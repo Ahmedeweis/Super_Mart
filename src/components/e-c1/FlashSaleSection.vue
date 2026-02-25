@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-4 py-6 md:py-8">
+  <section class="container mx-auto px-4 py-6 md:py-8" style="background-color: #efefef;">
     <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 md:mb-6 gap-2">
       <div class="flex items-center gap-4">
         <h2 class="text-xl md:text-2xl font-bold text-gray-900">Flash Sale</h2>
@@ -13,7 +13,7 @@
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
       <router-link :to="'/product/' + product.id" v-for="product in flashSaleProducts" :key="product.id"
-        class="bg-white p-3 md:p-4 rounded-xl border border-gray-100 hover:shadow-lg transition group block">
+        class="bg-white p-3 md:p-4 rounded-xl border border-gray-100 shadow-lg transition group block">
         <div class="relative mb-3">
           <img :src="getImageUrl(product.imageIndex)" :alt="product.title"
             class="w-full aspect-square object-cover rounded-lg bg-gray-100" />
@@ -23,9 +23,14 @@
         <h3 class="text-xs md:text-sm font-medium text-gray-800 mb-1 line-clamp-2 group-hover:text-primary transition">
           {{ product.title }}</h3>
         <p class="text-[10px] text-gray-500 mb-2 line-clamp-1">{{ product.description }}</p>
-        <div class="flex flex-wrap items-baseline gap-2 mb-1">
+        <div class="flex flex-col mb-1">
           <span class="text-sm md:text-lg font-bold text-gray-900">${{ product.price.toFixed(2) }}</span>
-          <span class="text-[10px] md:text-xs text-gray-400 line-through">${{ product.originalPrice.toFixed(2) }}</span>
+          <div class="flex items-center gap-2 mt-1">
+            <span class="bg-red-100 text-red-600 text-[10px] font-bold px-1.5 py-0.5 rounded">{{ product.discount
+              }}%</span>
+            <span class="text-[10px] md:text-xs text-gray-400 line-through">${{ product.originalPrice.toFixed(2)
+              }}</span>
+          </div>
         </div>
         <div class="flex items-center gap-1 text-[10px] md:text-xs text-gray-500">
           <svg class="w-3 h-3 text-yellow-400 fill-current" viewBox="0 0 20 20">
