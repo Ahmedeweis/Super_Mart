@@ -152,6 +152,7 @@
 
         </div>
     </div>
+    <Footer />
 </template>
 
 <script setup>
@@ -159,6 +160,7 @@ import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { products } from '../data/products'
 import { useCartStore } from '../store/cart'
+import Footer from '../components/e-c1/Footer.vue'
 
 const cartStore = useCartStore()
 

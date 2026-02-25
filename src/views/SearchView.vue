@@ -52,12 +52,14 @@
             </router-link>
         </div>
     </div>
+    <Footer />
 </template>
 
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { products } from '../data/products'
+import Footer from '../components/e-c1/Footer.vue'
 
 const route = useRoute()
 const searchQuery = computed(() => route.query.q || '')

@@ -26,6 +26,11 @@ const routes = [
     component: () => import('../views/LoginView.vue')
   },
   {
+    path: '/register',
+    name: 'register',
+    component: () => import('../views/RegisterView.vue')
+  },
+  {
     path: '/search',
     name: 'search',
     component: () => import('../views/SearchView.vue')
@@ -39,6 +44,13 @@ const routes = [
 ]
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  }
 })
 export default router

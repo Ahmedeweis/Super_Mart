@@ -105,6 +105,7 @@
             </div>
         </div>
     </div>
+    <Footer />
 </template>
 
 <script setup>
@@ -112,6 +113,7 @@ import { ref } from 'vue'
 import { useOrderStore } from '../store/order'
 import OrderViewModal from '../components/e-c1/OrderViewModal.vue'
 import OrderEditModal from '../components/e-c1/OrderEditModal.vue'
+import Footer from '../components/e-c1/Footer.vue'
 
 const orderStore = useOrderStore()
 

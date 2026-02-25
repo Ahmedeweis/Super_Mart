@@ -179,7 +179,7 @@
                                     v-if="cartStore.discountAmount > 0">
                                     <span class="text-green-600">Discount</span>
                                     <span class="font-bold text-green-600">-${{ cartStore.discountAmount.toFixed(2)
-                                    }}</span>
+                                        }}</span>
                                 </div>
 
                                 <div class="flex justify-between items-center pt-4 border-t border-gray-100 mt-4">
@@ -187,7 +187,7 @@
                                     <div class="text-right">
                                         <p class="text-xs text-gray-400 font-normal mb-1">USD</p>
                                         <p class="text-2xl font-bold text-gray-900">${{ cartStore.finalTotal.toFixed(2)
-                                        }}
+                                            }}
                                         </p>
                                     </div>
                                 </div>
@@ -201,6 +201,7 @@
     </div>
 
     <OrderSuccessModal :isOpen="showSuccessModal" @close="showSuccessModal = false" @action="goToOrders" />
+    <Footer />
 </template>
 
 <script setup>
@@ -209,6 +210,7 @@ import { useRouter } from 'vue-router'
 import { useCartStore } from '../store/cart'
 import { useOrderStore } from '../store/order'
 import OrderSuccessModal from '../components/e-c1/OrderSuccessModal.vue'
+import Footer from '../components/e-c1/Footer.vue'
 
 const router = useRouter()
 const cartStore = useCartStore()
