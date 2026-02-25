@@ -8,7 +8,7 @@
         class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-overlay" />
 
       <div class="relative z-10 px-6 md:px-12 lg:px-24 text-white w-full">
-        <div class="inline-block bg-red-500 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded mb-2 md:mb-4">
+        <div class="inline-block bg-red-700 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded mb-2 md:mb-4">
           1-12 DECEMBER</div>
         <h2 class="text-3xl sm:text-5xl md:text-7xl font-black mb-1 md:mb-2 tracking-tighter leading-tight">SPECIAL
           <br /> OFFER

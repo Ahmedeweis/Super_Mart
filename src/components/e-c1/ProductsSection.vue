@@ -15,8 +15,9 @@
             </svg>
           </div>
           <div v-if="product.discount"
-            class="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">
-            {{ product.discount }}%</div>
+            class="absolute top-2 left-2 bg-red-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">
+            {{ product.discount }}%
+          </div>
         </div>
         <div class="p-3 md:p-4">
           <h3
@@ -24,7 +25,7 @@
             {{ product.title }}</h3>
           <div class="flex flex-wrap items-baseline gap-2 mb-2">
             <span class="text-sm md:text-lg font-bold text-gray-900">${{ product.price.toFixed(2) }}</span>
-            <span v-if="product.originalPrice" class="text-[10px] md:text-xs text-gray-400 line-through">${{
+            <span v-if="product.originalPrice" class="text-[10px] md:text-xs text-gray-500 line-through">${{
               product.originalPrice.toFixed(2) }}</span>
           </div>
           <div class="flex items-center gap-1 text-[10px] md:text-xs text-gray-500">
@@ -36,7 +37,7 @@
             <span>|</span>
             <span>Sold {{ product.sold }}</span>
           </div>
-          <div class="flex items-center gap-1 mt-2 text-[10px] text-gray-400">
+          <div class="flex items-center gap-1 mt-2 text-[10px] text-gray-500">
             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>

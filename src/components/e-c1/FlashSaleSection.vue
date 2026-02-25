@@ -4,11 +4,11 @@
       <div class="flex items-center gap-4">
         <h2 class="text-xl md:text-2xl font-bold text-gray-900">Flash Sale</h2>
         <div
-          class="bg-red-500 text-white text-[10px] md:text-xs font-bold px-2 md:px-3 py-1 rounded flex items-center gap-2">
+          class="bg-red-700 text-white text-[10px] md:text-xs font-bold px-2 md:px-3 py-1 rounded flex items-center gap-2">
           Ends in <span>{{ formattedTime }}</span>
         </div>
       </div>
-      <a href="#" class="text-blue-600 font-medium hover:underline text-sm">See More</a>
+      <a href="#" class="text-blue-700 underline font-medium hover:text-blue-800 text-sm">See More</a>
     </div>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
@@ -17,19 +17,19 @@
         <div class="relative mb-3">
           <img :src="getImageUrl(product.imageIndex)" :alt="product.title"
             class="w-full aspect-square object-cover rounded-lg bg-gray-100" />
-          <div class="absolute top-2 left-2 bg-red-100 text-red-600 text-[10px] font-bold px-2 py-0.5 rounded">-{{
+          <div class="absolute top-2 left-2 bg-red-100 text-red-700 text-[10px] font-bold px-2 py-0.5 rounded">-{{
             product.discount }}%</div>
         </div>
         <h3 class="text-xs md:text-sm font-medium text-gray-800 mb-1 line-clamp-2 group-hover:text-primary transition">
           {{ product.title }}</h3>
-        <p class="text-[10px] text-gray-500 mb-2 line-clamp-1">{{ product.description }}</p>
+        <p class="text-[10px] text-gray-600 mb-2 line-clamp-1">{{ product.description }}</p>
         <div class="flex flex-col mb-1">
           <span class="text-sm md:text-lg font-bold text-gray-900">${{ product.price.toFixed(2) }}</span>
           <div class="flex items-center gap-2 mt-1">
-            <span class="bg-red-100 text-red-600 text-[10px] font-bold px-1.5 py-0.5 rounded">{{ product.discount
-              }}%</span>
-            <span class="text-[10px] md:text-xs text-gray-400 line-through">${{ product.originalPrice.toFixed(2)
-              }}</span>
+            <span class="bg-red-100 text-red-700 text-[10px] font-bold px-1.5 py-0.5 rounded">{{ product.discount
+            }}%</span>
+            <span class="text-[10px] md:text-xs text-gray-500 line-through">${{ product.originalPrice.toFixed(2)
+            }}</span>
           </div>
         </div>
         <div class="flex items-center gap-1 text-[10px] md:text-xs text-gray-500">

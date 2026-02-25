@@ -4,12 +4,12 @@
       <div>Call us: (00) 33 169 7720</div>
       <span><span class="font-bold text-black">Take 35%</span> off when you spend $99 or more with code <span
           class="font-bold text-black">" Super Mart99"</span> <a href="#"
-          class=" text-bold  text-blue-600 hover:underline">More
+          class="font-bold text-blue-700 underline hover:text-blue-800">More
           details</a></span>
       <div class="flex items-center gap-4">
 
         <div class="flex gap-4 text-lg ml-4">
-          <a href="#" class=" text-black text-bold">About  Super Mart</a>
+          <a href="#" class=" text-black text-bold">About Super Mart</a>
           <a href="#" class=" text-black text-bold">Helps</a>
         </div>
       </div>

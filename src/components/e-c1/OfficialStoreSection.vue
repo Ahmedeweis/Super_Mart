@@ -8,7 +8,7 @@
         </svg>
         <h2 class="text-xl md:text-2xl font-bold text-gray-900">Official Store</h2>
       </div>
-      <a href="#" class="text-blue-600 font-medium hover:underline text-sm">See More</a>
+      <a href="#" class="text-blue-700 underline font-medium hover:text-blue-800 text-sm">See More</a>
     </div>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
@@ -36,7 +36,7 @@
 const brands = [
   { name: 'AUKEY', colorClass: 'text-black' },
   { name: 'SAMSUNG', colorClass: 'text-blue-900' },
-  { name: 'PHILIPS', colorClass: 'text-cyan-500' },
+  { name: 'PHILIPS', colorClass: 'text-cyan-700' },
   { name: '3SECOND', colorClass: 'text-red-600' },
   { name: 'ACE', colorClass: 'text-red-600' },
   { name: 'WINGS', colorClass: 'text-red-600' },

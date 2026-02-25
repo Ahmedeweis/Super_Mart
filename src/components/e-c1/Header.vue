@@ -5,7 +5,7 @@
       <div class="flex items-center justify-between w-full md:w-auto">
         <a href="/" class="text-2xl font-bold text-gray-900 tracking-tight"> Super Mart</a>
         <div class="flex items-center gap-4 md:hidden">
-          <router-link to="/cart" class="text-gray-600 hover:text-primary relative">
+          <router-link to="/cart" aria-label="Cart" class="text-gray-600 hover:text-primary relative">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -21,7 +21,7 @@
       <!-- Search Bar -->
       <div class="w-full md:flex-1 max-w-2xl flex items-center">
         <div class="relative hidden md:flex">
-          <button @click="isCategoryOpen = !isCategoryOpen"
+          <button @click="isCategoryOpen = !isCategoryOpen" aria-label="Toggle Categories"
             class="bg-gray-100 px-4 py-2.5 rounded-l-lg border border-r-0 border-gray-300 text-gray-600 flex items-center gap-2 hover:bg-gray-200 transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
@@ -52,7 +52,7 @@
 
       <!-- Desktop Actions -->
       <div class="hidden md:flex items-center gap-6">
-        <router-link to="/cart" class="text-gray-600 hover:text-primary relative">
+        <router-link to="/cart" aria-label="Cart" class="text-gray-600 hover:text-primary relative">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
