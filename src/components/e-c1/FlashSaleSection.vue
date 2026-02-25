@@ -28,11 +28,11 @@
           <div class="flex items-center gap-2 mt-1">
             <span class="bg-red-100 text-red-700 text-[10px] font-bold px-1.5 py-0.5 rounded">{{ product.discount
             }}%</span>
-            <span class="text-[10px] md:text-xs text-gray-500 line-through">${{ product.originalPrice.toFixed(2)
+            <span class="text-[10px] md:text-xs text-gray-600 line-through">${{ product.originalPrice.toFixed(2)
             }}</span>
           </div>
         </div>
-        <div class="flex items-center gap-1 text-[10px] md:text-xs text-gray-500">
+        <div class="flex items-center gap-1 text-[10px] md:text-xs text-gray-600">
           <svg class="w-3 h-3 text-yellow-400 fill-current" viewBox="0 0 20 20">
             <path
               d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />

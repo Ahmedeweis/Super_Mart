@@ -25,10 +25,10 @@
             {{ product.title }}</h3>
           <div class="flex flex-wrap items-baseline gap-2 mb-2">
             <span class="text-sm md:text-lg font-bold text-gray-900">${{ product.price.toFixed(2) }}</span>
-            <span v-if="product.originalPrice" class="text-[10px] md:text-xs text-gray-500 line-through">${{
+            <span v-if="product.originalPrice" class="text-[10px] md:text-xs text-gray-600 line-through">${{
               product.originalPrice.toFixed(2) }}</span>
           </div>
-          <div class="flex items-center gap-1 text-[10px] md:text-xs text-gray-500">
+          <div class="flex items-center gap-1 text-[10px] md:text-xs text-gray-600">
             <svg class="w-3 h-3 text-yellow-400 fill-current" viewBox="0 0 20 20">
               <path
                 d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
@@ -37,7 +37,7 @@
             <span>|</span>
             <span>Sold {{ product.sold }}</span>
           </div>
-          <div class="flex items-center gap-1 mt-2 text-[10px] text-gray-500">
+          <div class="flex items-center gap-1 mt-2 text-[10px] text-gray-600">
             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
