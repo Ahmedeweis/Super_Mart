@@ -1,7 +1,13 @@
 <template>
   <div>
-    <HeroSection />
-    <FlashSaleSection />
+    <div class="bg-[#efefef]">
+      <HeroSection />
+    </div>
+
+    <div class="bg-[#efefef]">
+      <FlashSaleSection />
+    </div>
+
     <OfficialStoreSection />
     <PromotionsSection />
     <PopularCategories />
